@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+ int i,j,k,x,z,n;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        x=2*i-2;
+        z=i;
+        for(k=1;k<=n-i;k++)
+            cout<<" ";
+        for(j=1;j<=i;j++)
+            {
+                cout<<z;
+                z++;
+            }
+        for(j=1;j<=i-1;j++)
+        {
+            cout<<x;
+        	x--;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
